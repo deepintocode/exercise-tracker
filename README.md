@@ -1,1 +1,1 @@
-An exercise tracker using Express
+An exercise tracker using Express and MongoDB
