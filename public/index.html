@@ -15,15 +15,18 @@
       <input type="text" name="username">
       <button>Submit</button>
     </form>
-    <form action="">
+    <form action="/api/exercise/add" method="post">
       <p>Add exercises</p>
       <p>POST /api/exercise/add</p>
-      <input type="text">
-      <input type="text">
-      <input type="text">
-      <input type="date">
+      <input type="text" name="userId" placeholder="userId">
+      <input type="text" name="description" placeholder="description">
+      <input type="text" name="duration" placeholder="duration">
+      <input type="date" name="date" placeholder="date">
       <button>Submit</button>
     </form>
+    <p><strong>GET users's exercise log:</strong> GET /api/exercise/log?{userId}[&from][&to][&limit]</p>
+    <p><strong>{ }</strong> = required, <strong>[ ]</strong> = optional</p>
+    <p><strong>from, to</strong> = dates (yyyy-mm-dd); <strong>limit</strong> = number</p>
   </div>
 </body>
 </html>
